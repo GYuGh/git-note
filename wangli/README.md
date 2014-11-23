@@ -6,6 +6,9 @@ GitHub 笔记
 - **在刚开始使用git命令时，要先配置身份**
     git config --global user.name “wangli”
     git config --global user.email “wangli@gmail.com”**
+- cd ..\ 到上一级目录
+- cd +磁盘:  进入某一磁盘
+- cd +仓库名 进入自己的仓库
 - git add ＜file＞   将该文件从工作区添加到暂存区
 - git add .   将所有文件添加到暂存区
 - git commit -m “”将文件以某一个名字从暂存区添加到仓库，每一次名字都可以换，感觉最好把自己的修改操作作为名字
@@ -33,6 +36,7 @@ GitHub 笔记
 - 在把note分支从远程仓库上抓下来，抓之前应先切换到note分支
   git checkout note
   git fetch origin note
+- 再将写的内容提交到本地仓库 保存为md格式
 - 下一步是合并自己的分支到note分支中，建立在当前分支是note的基础上
   git merge wangli --no-ff  **“--no-ff”可以使得在远程仓库可以看到自己分支合并的记录**
 - 最后一步便是推送，需要分别将自己的分支和note分支推送到远程仓库
