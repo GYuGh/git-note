@@ -1,0 +1,23 @@
+**本机操作**
+-
+
+- git status<br>*查看仓库状态。*
+- git diff<br>*查看修改的部分。*<br>**p.s:git diff HEAD -- readme.txt**
+- git log<br>*显示从最近到最远到最近的日志（下键切换更远的日志）*
+- git reset --hard HEAD^/HEAD+number<br>*HEAD^^表示上上个版本，HEAD表示当前版本。*
+- git reset --hard+number<br>/HEAD file*数字没必要完全符合。*可以撤销add的误操作，重新放回工作区。
+- git reflog<br>*记录每一次操作。*
+- git add<br>*add与commit要对应*
+- git commit -m ""<br>*提交，引号内容是备注。*
+- git checkout -- file<br>*让文件回到最近一次add，或者commit状态，直接丢弃工作区的修改，如果没有“--”就创建了一个新的分支,用版本库里的版本替代工作区内的版本，可以一键还原。*
+- git rm file<br>*删除一个文件。*
+- git stash<br>*存储工作场地。*
+- git stash list<br>*查看存储列表*
+- git stash apply/pop<br>*恢复存储内容，恢复存储内容并删除stash。apply stash@{0}恢复指定的文件。*
+- git pull<br>抓取远程的新提交。
+- git tag <name><br>打开新标签
+- git show <tagname>
+- git tag -a <tagname> -m<br>指定标签信息
+- git tag -s <tagname> -m<br>PGP签名标签。
+- git push origin :refs/tags/<tagname>
+- git config --global color.ui true<br>显示颜色
